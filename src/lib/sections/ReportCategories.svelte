@@ -3,7 +3,8 @@
 		<div class="text-center mb-14">
 			<span class="text-xs font-semibold uppercase tracking-wider text-electric/80">Report Library</span>
 			<h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-4">
-				Six categories. Every angle covered.
+				24 reports. Six categories.<br/>
+				<span class="text-white/40">Growing every month.</span>
 			</h2>
 			<p class="text-lg text-white/50 mt-4 max-w-2xl mx-auto">
 				Browse reports by category, download what you need, deploy in minutes.
@@ -21,7 +22,8 @@
 						<div class="w-10 h-10 rounded-xl {cat.bg} flex items-center justify-center mb-3">
 							<span class="text-lg">{cat.icon}</span>
 						</div>
-						<h3 class="text-white font-semibold text-sm sm:text-base mb-1">{cat.name}</h3>
+						<h3 class="text-white font-semibold text-sm sm:text-base mb-0.5">{cat.name}</h3>
+						<p class="text-[10px] text-white/30 mb-1">{cat.count} reports</p>
 						<p class="text-xs text-white/40 leading-relaxed hidden sm:block">{cat.desc}</p>
 					</div>
 				</a>
@@ -30,7 +32,7 @@
 
 		<div class="text-center mt-10">
 			<a
-				href="https://simplexbi.com/products/"
+				href="/reports"
 				class="inline-flex items-center gap-2 text-electric hover:text-electric-light text-sm font-medium transition-colors"
 			>
 				Browse Full Report Catalog
@@ -44,42 +46,48 @@
 	const categories = [
 		{
 			name: 'Working Timekeeper',
-			desc: 'Track billable hours, utilization rates, and timekeeper productivity across your firm.',
+			count: 5,
+			desc: 'Hours, amounts, utilization, and missing time analysis by timekeeper.',
 			icon: '⏱',
 			bg: 'bg-electric/10',
 			glow: 'bg-electric/10'
 		},
 		{
 			name: 'Client / Matter',
-			desc: 'Financial performance by professional — revenue, WIP, collections, and profitability.',
+			count: 5,
+			desc: 'Billable hours, billed amounts, write-offs, and worked/billed/collected by professional.',
 			icon: '📋',
 			bg: 'bg-accent-emerald/10',
 			glow: 'bg-accent-emerald/10'
 		},
 		{
 			name: 'Inventory',
-			desc: 'WIP and AR aging, unbilled inventory analysis, and collection forecasting.',
+			count: 4,
+			desc: 'WIP aging, AR aging, credit balances, and open invoices.',
 			icon: '📊',
 			bg: 'bg-accent-cyan/10',
 			glow: 'bg-accent-cyan/10'
 		},
 		{
 			name: 'Matter Listings',
-			desc: 'Comprehensive matter data views, status tracking, and matter lifecycle reporting.',
+			count: 3,
+			desc: 'New matters, participation splits, and missing split identification.',
 			icon: '📁',
 			bg: 'bg-purple-400/10',
 			glow: 'bg-purple-400/10'
 		},
 		{
 			name: 'Trust',
-			desc: 'Trust account balances, transactions, reconciliation, and compliance reporting.',
+			count: 2,
+			desc: 'Trust balances and transaction detail for compliance.',
 			icon: '🔒',
 			bg: 'bg-amber-400/10',
 			glow: 'bg-amber-400/10'
 		},
 		{
 			name: 'Utilities',
-			desc: 'System administration reports, data validation, and operational health checks.',
+			count: 2,
+			desc: 'Prebill and AP invoice lock troubleshooting reports.',
 			icon: '⚙️',
 			bg: 'bg-rose-400/10',
 			glow: 'bg-rose-400/10'

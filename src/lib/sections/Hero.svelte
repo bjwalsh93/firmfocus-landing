@@ -43,12 +43,12 @@
 		<!-- Stats bar -->
 		<div class="grid grid-cols-3 gap-4 sm:gap-8 max-w-lg mx-auto">
 			<div class="text-center">
-				<div class="text-2xl sm:text-3xl font-bold text-white">50+</div>
-				<div class="text-xs sm:text-sm text-white/40 mt-1">Years Combined<br/>Expertise</div>
+				<div class="text-2xl sm:text-3xl font-bold text-white">24</div>
+				<div class="text-xs sm:text-sm text-white/40 mt-1">Pre-Built<br/>Reports</div>
 			</div>
 			<div class="text-center border-x border-white/5">
-				<div class="text-2xl sm:text-3xl font-bold text-white">6</div>
-				<div class="text-xs sm:text-sm text-white/40 mt-1">Report<br/>Categories</div>
+				<div class="text-2xl sm:text-3xl font-bold text-white">50+</div>
+				<div class="text-xs sm:text-sm text-white/40 mt-1">Years Combined<br/>Expertise</div>
 			</div>
 			<div class="text-center">
 				<div class="text-2xl sm:text-3xl font-bold text-white">$299</div>
