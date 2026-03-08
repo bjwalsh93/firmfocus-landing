@@ -27,7 +27,7 @@
 		<!-- CTAs -->
 		<div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
 			<a
-				href="https://simplexbi.com/products/"
+				href="/reports"
 				class="w-full sm:w-auto px-8 py-4 bg-electric hover:bg-electric-light text-white font-semibold rounded-xl transition-all hover:shadow-xl hover:shadow-electric/20 text-base"
 			>
 				Browse Reports — From $299/mo

@@ -27,7 +27,7 @@
 				<div class="space-y-3">
 					<a href="/reports" class="block text-sm text-white/40 hover:text-white transition-colors">Report Library</a>
 					<a href="/pricing" class="block text-sm text-white/40 hover:text-white transition-colors">Pricing</a>
-					<a href="https://simplexbi.com/products/" class="block text-sm text-white/40 hover:text-white transition-colors">Browse Reports</a>
+					<a href="/reports" class="block text-sm text-white/40 hover:text-white transition-colors">Browse Reports</a>
 				</div>
 			</div>
 

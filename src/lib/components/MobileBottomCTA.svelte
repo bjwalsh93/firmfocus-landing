@@ -11,7 +11,7 @@
 {#if visible}
 	<div class="fixed bottom-0 left-0 right-0 z-40 lg:hidden glass border-t border-white/10 p-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
 		<a
-			href="https://simplexbi.com/products/"
+			href="/reports"
 			class="flex items-center justify-center gap-2 w-full py-3 bg-electric hover:bg-electric-light text-white font-semibold rounded-xl transition-all shadow-lg shadow-electric/20"
 		>
 			Get Started — From $299/mo

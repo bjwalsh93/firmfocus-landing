@@ -63,7 +63,7 @@
 					View Plans
 				</a>
 				<a
-					href="https://simplexbi.com/products/"
+					href="/reports"
 					class="px-4 py-2 bg-electric hover:bg-electric-light text-white text-sm font-medium rounded-lg transition-all hover:shadow-lg hover:shadow-electric/20"
 				>
 					Get Started
@@ -104,7 +104,7 @@
 				{/each}
 				<div class="pt-3 border-t border-white/5">
 					<a
-						href="https://simplexbi.com/products/"
+						href="/reports"
 						class="block w-full text-center px-4 py-3 bg-electric hover:bg-electric-light text-white font-medium rounded-lg transition-all"
 					>
 						Get Started — $299/mo
