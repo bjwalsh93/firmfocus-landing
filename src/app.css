@@ -1,0 +1,92 @@
+@import 'tailwindcss';
+
+@theme {
+	--color-navy-950: #0a0e1a;
+	--color-navy-900: #0f1629;
+	--color-navy-800: #151d38;
+	--color-navy-700: #1c2747;
+	--color-navy-600: #243156;
+	--color-electric: #3b82f6;
+	--color-electric-light: #60a5fa;
+	--color-electric-glow: #93c5fd;
+	--color-accent-cyan: #22d3ee;
+	--color-accent-emerald: #34d399;
+	--color-glass-border: rgba(255, 255, 255, 0.08);
+	--color-glass-bg: rgba(255, 255, 255, 0.03);
+	--color-glass-bg-hover: rgba(255, 255, 255, 0.06);
+	--font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+	html {
+		scroll-behavior: smooth;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	body {
+		background-color: var(--color-navy-950);
+		color: #e2e8f0;
+		font-family: var(--font-sans);
+	}
+
+	::selection {
+		background-color: rgba(59, 130, 246, 0.3);
+		color: white;
+	}
+}
+
+@layer utilities {
+	.glass {
+		background: var(--color-glass-bg);
+		border: 1px solid var(--color-glass-border);
+		backdrop-filter: blur(12px);
+		-webkit-backdrop-filter: blur(12px);
+	}
+
+	.glass-hover:hover {
+		background: var(--color-glass-bg-hover);
+		border-color: rgba(255, 255, 255, 0.12);
+	}
+
+	.glow-blue {
+		box-shadow: 0 0 40px rgba(59, 130, 246, 0.15), 0 0 80px rgba(59, 130, 246, 0.05);
+	}
+
+	.glow-text {
+		text-shadow: 0 0 40px rgba(59, 130, 246, 0.3);
+	}
+
+	.gradient-text {
+		background: linear-gradient(135deg, #fff 0%, #93c5fd 50%, #60a5fa 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.fade-in {
+		animation: fadeIn 0.6s ease-out forwards;
+		opacity: 0;
+	}
+
+	.slide-up {
+		animation: slideUp 0.6s ease-out forwards;
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	@keyframes fadeIn {
+		to { opacity: 1; }
+	}
+
+	@keyframes slideUp {
+		to { opacity: 1; transform: translateY(0); }
+	}
+
+	.grid-bg {
+		background-image:
+			linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+			linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+		background-size: 60px 60px;
+	}
+}
